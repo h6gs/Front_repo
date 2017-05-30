@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="RailsAngular">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Stack Setup</title>
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!-- inject:css -->
+  <!-- endinject -->
+</head>
+<body ng-controller="MainCtrl as Main">
+  <div ng-repeat="user in Main.all">
+    Name: {{ user.first_name}}
+    <br>
+    Email: {{ user.email }}
+    <ul>
+      Video
+      <li ng-repeat="video in user.videos">
+        Title: {{video.title}}{{video.youtube_id}}
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
