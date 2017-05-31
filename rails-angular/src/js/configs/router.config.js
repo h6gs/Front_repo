@@ -16,23 +16,23 @@ function Router(
 
   $stateProvider
   .state('home', {
-    url: 'http://localhost:3000/api/',
+    url: '/',
     templateUrl: '/js/views/home.html'
   })
   .state('register', {
-    url: 'http://localhost:3000/api/register',
+    url: '/register',
     templateUrl: '/js/views/register.html',
     controller: 'RegisterCtrl',
     controllerAs: 'register'
   })
   .state('login', {
-    url: 'http://localhost:3000/api/login',
+    url: '/login',
     templateUrl: '/js/views/login.html',
     controller: 'LoginCtrl',
     controllerAs: 'login'
   })
   .state('usersIndex', {
-    url: 'http://localhost:3000/api/users',
+    url: '/users',
     templateUrl: '/js/views/users/index.html',
     controller: 'UsersIndexCtrl',
     controllerAs: 'usersIndex'
